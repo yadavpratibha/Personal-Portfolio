@@ -1,0 +1,50 @@
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'), navToggle = document.getElementById('nav-toggle'), navClose = document.getElementById('nav-close');
+
+// MENU SHOW
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+
+//MENU HIDDEN
+if (navClose) {
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink=document.querySelectorAll('.nav__link')
+
+const linkAction=()=>{
+    const navMenu=document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu') //When we click each nav__link, we remove the show-menu class
+}
+navLink.forEach(n=>n.addEventListener('click',linkAction))
+
+//CHANGE BACKGROUND HEADER
+const scrollHeader=()=>{
+    const header=document.getElementById('header')
+    this.scrollY >= 50 ?header.classList.add('scroll-header'):header.classList.remove('scroll-header')
+}
+
+
+/*=============== HOME TYPED JS ===============*/
+
+
+/*=============== ADD SHADOW HEADER ===============*/
+
+
+/*=============== CONTACT EMAIL JS ===============*/
+
+
+/*=============== SHOW SCROLL UP ===============*/
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
