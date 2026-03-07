@@ -291,7 +291,30 @@ image {
     margin-top: 2rem;
 }
 /*=============== BUTTON ===============*/
+.button{
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.4s, color 0.4s;
+}
 
+.button:hover{
+    box-shadow: 0 8px 24px hsla(var(--hue), 80%, 48%, 0.3);
+}
+
+.button__ghost{
+    background-color: var(--body-color);
+    color: var(--white-color);
+    border: 2px solid var(--first-color);
+}
+
+.button__ghost:hover{
+    color: var(--first-color);
+}
 
 /*=============== ABOUT ===============*/
 

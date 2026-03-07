@@ -33,7 +33,10 @@ const scrollHeader=()=>{
 
 
 /*=============== HOME TYPED JS ===============*/
-
+const typedHome = new Typed('#home-typed', {
+    strings: ['Software Engineer','Web developer','Computer Science Student'], //professions
+    typeSpeed: 50,
+});
 
 /*=============== ADD SHADOW HEADER ===============*/
 
