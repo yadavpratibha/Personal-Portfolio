@@ -452,7 +452,50 @@ image {
 }
 
 /*=============== RESUME ===============*/
+.resume__container {
+    row-gap: 4rem;
+}
 
+.resume__content {
+    row-gap: 1rem;
+}
+
+.resume__subtitle {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+}
+
+/* .resume__subtitle i{
+    font-size: 1.5rem;
+    font-weight: initial;
+} */
+
+.resume__list {
+    row-gap: 2rem;
+}
+
+.resume__data {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.resume__title {
+    font-size: var(--h3-font-size);
+}
+
+.resume__info {
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: var(--small-font-size);
+    color: var(--gray-color);
+}
+
+.resume__info address {
+    font-style: initial;
+}
 
 /*=============== CONTACT ===============*/
 
@@ -482,15 +525,16 @@ image {
         height: 200px;
     }
 
-    .home__img, .about__img {
+    .home__img,
+    .about__img {
         width: 170px;
     }
 
-    .projects__data{
+    .projects__data {
         padding-inline: 0.5rem;
     }
 
-    .projects__data .button{
+    .projects__data .button {
         padding: 0.5rem 0.75rem;
     }
 }
@@ -499,7 +543,8 @@ image {
 @media screen and (min-width:540px) {
 
     .home__container,
-    .about__container, .projects__container {
+    .about__container,
+    .projects__container, .resume__container {
         grid-template-columns: 400px;
         justify-content: center;
     }
@@ -523,7 +568,7 @@ image {
         justify-content: initial;
     }
 
-    .projects__container{
+    .projects__container, .resume__container {
         grid-template-columns: 350px 350px;
     }
 }
@@ -609,15 +654,34 @@ image {
         width: 350px;
     }
 
-    .projects{
+    .projects {
         padding-block: 8rem 4rem;
     }
-    .projects__container{
+
+    .projects__container {
         grid-template-columns: 350px 350px 350px;
         gap: 3rem 2rem;
     }
-    .projects__data .button{
+
+    .projects__data .button {
         margin-top: 1rem;
+    }
+
+    .resume{
+        padding-block: 8rem 4rem;
+    }
+
+    .resume__container{
+        grid-template-columns: 465px 465px;
+        column-gap: 7rem;
+    }
+
+    .resume__content{
+        row-gap: 1.5rem;
+    }
+
+    .resume__list{
+        row-gap: 3rem;
     }
 }
 
