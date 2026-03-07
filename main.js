@@ -51,35 +51,40 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 /*=============== CONTACT EMAIL JS ===============*/
-const contactForm=document.getElementById('contact-form'),
-      contactMessage=document.getElementById('contact-message')
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
 
-const sendEmail=(e)=>{
+const sendEmail = (e) => {
     e.preventDefault()
 
     //serviceID-templateID-#form-publicKey
-    emailjs.sendForm('service_ommx8sf','template_vbfty7p','#contact-form','O-P_-4AslTw2hedFt')
-    .then(()=>{
-        //Show sent message
-        contactMessage.textContent='Message sent successfully ✅'
+    emailjs.sendForm('service_ommx8sf', 'template_vbfty7p', '#contact-form', 'O-P_-4AslTw2hedFt')
+        .then(() => {
+            //Show sent message
+            contactMessage.textContent = 'Message sent successfully ✅'
 
-        //Remove message after 5 sec
-        setTimeout(()=>{
-            contactMessage.textContent=''
-        },5000)
+            //Remove message after 5 sec
+            setTimeout(() => {
+                contactMessage.textContent = ''
+            }, 5000)
 
-        //Clear input fields
-        contactForm.reset()
-    },()=>{
-        //Show error message
-        contactMessage,textContent='Message not sent❌'
-    })
+            //Clear input fields
+            contactForm.reset()
+        }, () => {
+            //Show error message
+            contactMessage, textContent = 'Message not sent❌'
+        })
 }
 contactForm.addEventListener('submit', sendEmail)
 
 
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+    //When scroll is higher than 350viewport height, add the show-scroll class to the tag with scrollup class
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
