@@ -231,6 +231,7 @@ img {
 .home__container {
     row-gap: 4rem;
     padding-block: 2.5rem 2rem;
+    /* margin-top: -1rem; */
 }
 
 .home__content {
@@ -240,8 +241,8 @@ img {
 
 .home__image,
 .about__image {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     background-color: var(--white-color);
     border-radius: 50%;
     overflow: hidden;
@@ -252,9 +253,9 @@ img {
     box-shadow: 0 8px 32px hsl(var(--hue), 80%, 48%, 0.3);
 }
 
-.home__img,
-.about__img {
-    /* width: 200px; */
+.home__image,
+.about__image {
+    width: 200px;
     filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, 0.2));
 }
 
@@ -342,7 +343,7 @@ img {
 }
 
 .about__description {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .about__subtitle {
@@ -463,7 +464,7 @@ img {
 }
 
 .resume__content {
-    row-gap: 1rem;
+    row-gap: 0.5rem;
 }
 
 .resume__subtitle {
@@ -503,6 +504,7 @@ img {
     font-style: initial;
 }
 
+
 /*=============== CONTACT ===============*/
 .contact__container {
     row-gap: 4rem;
@@ -519,7 +521,7 @@ img {
     color: var(--white-color);
     border: 2px solid var(--first-color);
     outline: none;
-    padding: 1.25rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
 }
@@ -756,7 +758,7 @@ img {
     }
 
     .section__title {
-        margin-bottom: 3rem;
+        margin-bottom: 1.75rem;
     }
 
     .nav {
@@ -776,7 +778,7 @@ img {
     .home__container {
         grid-template-columns: 400px 480px;
         column-gap: 7rem;
-        padding-block: 8rem 3rem;
+        /* padding-block: 8rem 3rem; */
     }
 
     .home__image {
@@ -805,11 +807,11 @@ img {
     .about__container {
         grid-template-columns: 540px 400px;
         column-gap: 6rem;
-        padding-block: 5rem 3rem;
+        /* padding-block: 5rem 3rem; */
     }
 
     .about__content {
-        row-gap: 5rem;
+        row-gap: 2rem;
     }
 
     .about__data .section__title {
@@ -823,7 +825,7 @@ img {
     }
 
     .about__img {
-        width: 350px;
+        width: 400px;
     }
 
     .projects {
@@ -832,7 +834,7 @@ img {
 
     .projects__container {
         grid-template-columns: 350px 350px 350px;
-        gap: 3rem 2rem;
+        gap: 2rem 2rem;
     }
 
     .projects__data .button {
@@ -861,7 +863,7 @@ img {
     }
 
     .contact__container{
-        grid-template-columns: 310px 450px;
+        grid-template-columns: 300px 460px;
         column-gap: 10rem;
     }
 
