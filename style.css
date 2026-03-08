@@ -1,8 +1,8 @@
 :root {
     --header-height: 3.5rem;
 
-    --hue: 180;
-    --first-color: hsl(var(--hue), 80%, 48%);
+    --hue: 270;
+    --first-color: hsl(var(--hue), 100%, 81%);  /*--Cyan--*/
     --first-color-alt: hsl(var(--hue), 80%, 44%);
     --white-color: hsl(var(--hue), 8%, 92%);
     --black-color: hsl(var(--hue), 4%, 8%);
@@ -219,6 +219,9 @@ image {
 }
 
 /* Active link */
+.active-link::after{
+    width: 60%;
+}
 
 
 /*=============== HOME ===============*/
