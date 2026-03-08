@@ -398,7 +398,7 @@ img {
 }
 
 .about__img {
-    width: 200px;
+    width: 240px;
     filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, 0.2));
 }
 
@@ -691,7 +691,7 @@ img {
 
     .home__img,
     .about__img {
-        width: 170px;
+        width: 200px;
     }
 
     .projects__data {
@@ -732,6 +732,10 @@ img {
     .home__buttons {
         justify-content: initial;
     }
+
+    /* .about__img {
+        width: 200px;
+    } */
 
     .projects__container,
     .resume__container, .contact__container{
@@ -833,7 +837,7 @@ img {
     }
 
     .projects__container {
-        grid-template-columns: 350px 350px 350px;
+        grid-template-columns: 270px 270px 270px;
         gap: 2rem 2rem;
     }
 
