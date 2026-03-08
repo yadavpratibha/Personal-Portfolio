@@ -72,7 +72,7 @@ const sendEmail = (e) => {
             contactForm.reset()
         }, () => {
             //Show error message
-            contactMessage, textContent = 'Message not sent❌'
+            contactMessage.textContent = 'Message not sent❌'
         })
 }
 contactForm.addEventListener('submit', sendEmail)
@@ -96,7 +96,7 @@ scrollActive=()=>{
         const sectionHeight=current.offsetHeight,
               sectionTop=current.offsetTop-58,
               sectionId=current.getAttribute('id'),
-              sectionsClass=document.querySelector('.nac__menu a[href*='+sectionId+']')
+              sectionsClass=document.querySelector('.nav__menu a[href*='+sectionId+']')
 
         if(scrollDown>sectionTop && scrollDown<=sectionTop+sectionHeight){
             sectionsClass.classList.add('active-link')
@@ -106,7 +106,7 @@ scrollActive=()=>{
 
     })
 }
-
+window.addEventListener('scroll', scrollActive)
 
 
 
